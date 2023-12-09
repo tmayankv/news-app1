@@ -35,7 +35,7 @@ this.setState({
 }
 Updatedata= async()=>{
   let {category}= this.props
-  let url=`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=9e6d059f6b464ceabbdc98950ec73f8b&page=${this.state.page+1}&pageSize=5`;
+  let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=9e6d059f6b464ceabbdc98950ec73f8b&page=${this.state.page}&pageSize=5`;
   console.log(this.state.page+1)
   let data= await fetch(url);
   let parsedata= await data.json();
