@@ -55,9 +55,9 @@ Updatedata= async()=>{
         </div>
         }
          <InfiniteScroll
- dataLength={this.state.articles.length}
+ dataLength={this.state.articles?.length}
  next={this.Updatedata}
- hasMore={this.state.articles.length!==this.state.totalresults}
+ hasMore={this.state.articles?.length!==this.state.totalresults}
 loader={<div className=" text-center my-3 ">
           <div className="spinner-border"  role="status">
             <span className="visually-hidden">Loading...</span>
