@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar'
 import News from './components/News'
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from 'react-router-dom'
@@ -10,11 +10,11 @@ import {
 export class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
       <Navbar/>
       <Switch>
       
-      <Route exact path='/news-app1'><News key="general" className="d-flex" category='general'></News></Route>
+      <Route exact path='/'><News key="general" className="d-flex" category='general'></News></Route>
       <Route exact path='/news-app1/sports'><News key="sports" className="d-flex" category='sports'></News></Route>
       <Route exact path='/news-app1/business'><News key="business" className="d-flex" category='business'></News></Route>
       <Route exact path='/news-app1/technology'><News key="technology" className="d-flex" category='technology'></News></Route>
@@ -24,7 +24,7 @@ export class App extends Component {
   
        
       </Switch>
-      </Router>
+      </HashRouter>
       
       )
     }
