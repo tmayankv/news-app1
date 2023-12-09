@@ -13,7 +13,7 @@ export class App extends Component {
       <HashRouter>
         <Navbar/>
       <Routes>
-      <Route path='/' element={<News key="general" className="d-flex" category='general' />} />
+      <Route path='/news-app1' element={<News key="general" className="d-flex" category='general' />} />
           <Route path='/sports' element={<News key="sports" className="d-flex" category='sports' />} />
           <Route path='/business' element={<News key="business" className="d-flex" category='business' />} />
           <Route path='/technology' element={<News key="technology" className="d-flex" category='technology' />} />
