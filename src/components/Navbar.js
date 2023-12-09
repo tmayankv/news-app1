@@ -15,7 +15,7 @@ export class Navbar extends Component {
           <Link className="nav-link active" aria-current="page" to="/news-app1" style={{color:"white"}}>Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="news-app1/sports" style={{color:"white"}}>Sports</Link>
+          <Link className="nav-link" to="/news-app1/sports" style={{color:"white"}}>Sports</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/business" style={{color:"white"}}>Business</Link>
