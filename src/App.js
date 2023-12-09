@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar'
 import News from './components/News'
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from 'react-router-dom'
@@ -10,7 +10,7 @@ import {
 export class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
       <Navbar/>
       <Switch>
       
@@ -24,7 +24,7 @@ export class App extends Component {
   
        
       </Switch>
-      </Router>
+      </HashRouter>
       
       )
     }
