@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './components/Navbar'
 import News from './components/News'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
@@ -14,7 +14,7 @@ export class App extends Component {
       <Navbar/>
       <Switch>
       
-      <Route exact path='/'><News key="general" className="d-flex" category='general'></News></Route>
+      <Route exact path='/news-app1'><News key="general" className="d-flex" category='general'></News></Route>
       <Route exact path='/sports'><News key="sports" className="d-flex" category='sports'></News></Route>
       <Route exact path='/business'><News key="business" className="d-flex" category='business'></News></Route>
       <Route exact path='/technology'><News key="technology" className="d-flex" category='technology'></News></Route>
